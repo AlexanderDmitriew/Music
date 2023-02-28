@@ -1,0 +1,18 @@
+.header{
+    background-color: #FFF;
+    min-height: 68px;
+}
+
+.defaul_shadow{
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+}
+
+.form-control{
+    background-color: #EEF6FE;
+    min-height: 56px;
+}
+
+.custom_card{
+    border-radius: 4px;
+    background: #FFFFFF;
+}
