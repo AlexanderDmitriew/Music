@@ -4,29 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     </head>
-    <title>Document</title>
+    <title>Текст песен</title>
 </head>
 <body>
-<header class="header defaul_shadow d-flex py-3">
-    <div class="container ">
-        <div class="row">
-        <div class="col-2 d-flex align-items-center">
+    <!-- Шапка -->
+<header class="navbar default_shadow d-flex py-3">
+    <div class="container d-flex justify-content-center">
+        <div class="d-flex col-lg-4 col-md-4">
             <object data="assets/img/Logo.svg" type=""></object>
         </div>
-        <div class="col-8">
-        <ul class="nav justify-content-center">
-            <li><a href="#" class="nav-link px-2 link-dark">Новинки</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Русские песни</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Иностранные песни</a></li>
-        </ul>
-        </div>
-        </div>
+            <ul class="nav col-lg-8 col-md-8 mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 link-dark">Новинки</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Русские песни</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Иностранные песни</a></li>
+            </ul>
     </div>
 </header>
-<div class="container text-center">
+<!-- Первый баннер -->
+<div class="container text-center d-sm-none d-md-block d-none d-sm-block">
     <div class="row">
         <div class="col-12 d-flex align-items-center py-1">
             <object data="assets/img/happy_music.svg" type=""></object>
@@ -35,31 +34,72 @@
             </div>
             <object data="assets/img/happy_music_reverse.svg" type=""></object>
         </div>
+    </div>
+</div>
+<!-- Строка поиска -->
+<div class="container">
+    <div class="row">
         <div class="col-12">
-            <div class="input-group mt-3">
+            <div class="input-group mt-3 py-1">
                 <input type="text" class="form-control" placeholder="Поиск" aria-label="Поиск" aria-describedby="button-addon2">
                 <button class="btn btn-primary" type="button" id="button-addon2">Поиск</button>
             </div>
         </div>
     </div>
 </div>
-<div class="container text-center">
-    <div class="row mt-4">
-        <div class="col-6 ">
-            <div class="custom_card defaul_shadow">
-                <div class="row d-flex">
-                    <h5>Популярные тексты песен</h5>
+<!-- Карточки популярных треков и артистов -->
+<div class="container py-3 ">
+    <div class="row">
+        <div class="col-lg-6 col-sm-12 mt-2">
+            <div class="card default_shadow">
+                <div class="card-header">
+                    <p class="h6 pt-2 mb-2">Популярные тексты</p>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                        <li class="list-group-item">And a fifth one</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="col-6">
-            <div class="container custom_card defaul_shadow">
-                <div class="row d-flex">
-                    <h5>Популярные тексты песен</h5>
+        <div class="col-lg-6 col-sm-12 mt-2">
+            <div class="card default_shadow">
+                <div class="card-header">
+                    <p class="h6 pt-2 mb-2">Популярные артисты</p>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                        <li class="list-group-item">And a fifth one</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!-- Футер -->
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 col-sm-12 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-muted">© 2023 CleverDesign, Inc</span>
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-muted">Все тексты представлены для ознакомления</span>
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-muted">Права на тексты песен, переводы принадлежат их авторам</span>
+        </div>
+    </footer>
+</div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </html>

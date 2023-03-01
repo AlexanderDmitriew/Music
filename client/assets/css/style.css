@@ -3,12 +3,13 @@ h1{
     line-height: 84px;
 }
 
-.header{
+.navbar{
     background-color: #FFF;
     min-height: 68px;
+    width: 100%;
 }
 
-.defaul_shadow{
+.default_shadow{
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
 }
 
